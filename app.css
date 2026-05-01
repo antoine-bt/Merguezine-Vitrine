@@ -40,8 +40,12 @@ main {
   font-style: normal;
 }
 
-#logo{
-    width: 10em;
+#logo {
+    width: min(10em, 55vw);
+}
+
+.titre-accueil {
+    font-size: clamp(1rem, 4vw, 1.75rem);
 }
 
 footer {
@@ -73,8 +77,8 @@ footer a:hover {
 }
 
 footer img {
-    width: 1.5em;
-    height: 1.5em;
+    width: clamp(1.2em, 5vw, 1.5em);
+    height: clamp(1.2em, 5vw, 1.5em);
     object-fit: contain;
     filter: invert(1) sepia(1) saturate(3) hue-rotate(320deg) brightness(0.95);
 }
@@ -92,4 +96,10 @@ footer img {
     z-index: -1;
     width: 2em;
     animation: tomber linear infinite;
+}
+
+@media (max-width: 400px) {
+    .lien-label {
+        display: none;
+    }
 }
