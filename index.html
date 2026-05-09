@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="js/pluie-merguez.js"></script>
+    <script src="js/carrousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app.css">
 
@@ -15,11 +16,125 @@
 </head>
 <body>
     <main>
-        <div class="d-flex align-items-center flex-column pt-4">
+        <div class="d-flex align-items-center flex-column">
             <img src="images/Logo.png" id="logo">
-            <div class="mt-4 mt-md-5 lemon-regular dark-text titre-accueil text-center px-3">
+            <div class="lemon-regular dark-text titre-accueil text-center px-3">
                 Bienvenue sur le Merguezine !
             </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="accordion" id="accordionPresentation">
+                <div class="accordion-item border-0">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button lemon-regular dark-text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePresentation"
+                            aria-expanded="true" aria-controls="collapsePresentation">
+                            Qui sommes-nous ?
+                        </button>
+                    </h5>
+
+                    
+                    <div id="collapsePresentation" class="accordion-collapse collapse show" data-bs-parent="#accordionPresentation">
+                        <div class="accordion-body presentation">
+                            <p class="poppins-regular">
+                                Beaucoup ont essayé, mais personne n’a réussi.
+                            </p>
+
+                            <p class="poppins-regular">
+                                Les tentatives de création d’un « Shōnen Jump » à la française n’ont jamais manqué, de grandes entreprises aux modestes créateurs ; 
+                                beaucoup ont tenté de mettre en place un magazine avec, comme contenu régulier, des mangas français. 
+                                On peut notamment penser à une tentative d’ANKAMA avec le Gamakna, ou encore au projet Konkuru, qui lui aussi s’est malheureusement arrêté.
+                            </p>
+
+                            <p class="poppins-regular">
+                                Le Merguezine tente à son tour d’emprunter le chemin du magazine de publication de mangas francophones, mais avec un objectif différent. 
+                                Notre magazine a pour ambition de conserver la liberté des auteurs et leur indépendance. 
+                                C’est pourquoi ce numéro, à caractère unique, contiendra exclusivement (sauf une exception) des histoires courtes, pouvant être lues indépendamment d’autres chapitres potentiels ou publications du manga associé.
+                            </p>
+
+                            <p class="poppins-regular">
+                                Les auteurs publiés ont tous su donner naissance à d’excellents mangas, et nous avons hâte de vous les présenter. 
+                                L’équipe s’est donné à fond afin de vous offrir un projet et un divertissement de qualité. 
+                                Grâce à notre passion commune, nous, auteurs indépendants et pour l’instant amateurs, sommes en quête d’expérience et de visibilité.
+                            </p>
+
+                            <p class="poppins-regular">
+                                En vous souhaitant une bonne lecture.
+                            </p>
+
+                            <p class="poppins-regular">
+                                Raynaven et Pashollow, co-fondateurs du Merguezine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="accordion" id="accordionPresentationMerguez">
+                <div class="accordion-item border-0">
+                    <h5 class="accordion-header">
+                        <button class="accordion-button lemon-regular dark-text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsePresentationMerguez"
+                            aria-expanded="true" aria-controls="collapsePresentationMerguez">
+                            Vous avez dit merguez ?
+                        </button>
+                    </h5>
+
+                    
+                    <div id="collapsePresentationMerguez" class="accordion-collapse collapse show" data-bs-parent="#accordionPresentationMerguez">
+                        <div class="accordion-body presentation">
+                            <p class="poppins-regular">
+                                La Merguez, une histoire
+                            </p>
+
+                            <p class="poppins-regular">
+                                La merguez, c’est une histoire plus compliquée que cela ne le laisse paraître. 
+                                Entre les différents pays d’Afrique du Nord, surtout les communautés amazighes qui revendiquent toutes l’invention de la merguez, et l’origine même du mot, rien ne nous laisse de marbre.
+                            </p>
+
+                            <p class="poppins-regular">
+                                Saviez-vous que la merguez est un dérivé du mot «Amrguaz», qui désigne le sexe de l’homme ? 
+                                Finalement, on se rend compte que ni l’époque ni le lieu n’empêchent les hommes de succomber à la beauferie...
+                                Et puis, quelle ironie que ce soit une femme à la tête du Merguezine...
+                            </p>
+
+                            <p class="poppins-regular">
+                                Pourquoi le «Merguezine» ?
+                            </p>
+
+                            <p class="poppins-regular">
+                                Raynaven dit : Si vous l’aviez compris, le nom «Merguezine» est né d’un jeu de mots entre les merguez et le magazine. 
+                                Mais la merguez, c’est un choix qui a été pensé à chaque instant de notre quotidien. 
+                                Tout a commencé avec la découverte de la chanson « La Merguez Party » des Musclés. 
+                                Et puis, de là, ce mot s’est imprégné dans mon quotidien. 
+                                Mon père utilise ce terme pour combler n’importe quel trou de mémoire ou hésitation dans une phrase. 
+                                Mais il sert aussi à parler de quelque chose d’insignifiant, tout comme l’expression « et des clopinettes ».
+                            </p>
+
+                            <p class="poppins-regular">
+                                Par exemple :<br>
+                                - Oh c’était pas très cher, ça m’a couté deux euros et des merguez.
+                            </p>
+
+                            
+                            <p class="poppins-regular">
+                                C’est tout naturellement que les merguez sont entrées dans mon vocabulaire quotidien. 
+                                Et vous imaginez la suite : le Merguezine était alors une évidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-3d my-5" id="carousel">
+            <h4 class="lemon-regular dark-text">Nos mangas</h4>
+            <div class="carousel-track" id="carouselTrack"></div>
+            <button class="carousel-btn bas" id="btnDroite"><img src="images/icones/arrow.png"></button>
+            <div class="carousel-dots" id="carouselDots"></div>
         </div>
     </main>
     
