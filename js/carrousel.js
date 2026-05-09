@@ -29,6 +29,12 @@ class Carrousel {
         const carte = document.createElement("div");
         carte.classList.add("carte");
         carte.innerHTML = html;
+
+        const img = carte.querySelector("img");
+        if (img) {
+            img.src = `mangas-carrousel/${nom}/${img.getAttribute("src")}`;
+        }
+
         this.track.appendChild(carte);
         this.cartes.push(carte);
 
